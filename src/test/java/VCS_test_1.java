@@ -59,8 +59,8 @@ public class VCS_test_1 {
         user1.createUser(gmailEmail,gmailPwd);
 
         //GMAIL LOGIN DIALOGUE
+
         loginPageGmail LP = new loginPageGmail(driver);
-      //  LP.loginUserError(user1);
 
         homePageGmail HP = new homePageGmail(driver);
 
@@ -80,55 +80,36 @@ public class VCS_test_1 {
         HP.setSubject(topicG +ID);
 
         HP.setBody(body1);
+
         HP.sendEmail();
 
-//MESSAGE SEND END
-
 //MESSAGE OUTBOX CHECK
+
         Thread.sleep(sleepTime);
-
         HP.gotoOutbox();
-
         Thread.sleep(sleepTime);
 
         String topic1=topicG+ID;
 
         HP.checkIfAmongSend(topicG+ID);
 
-        ///!!
+//HOTMAIL DELIVERY CHECK
 
         driver.navigate().to(hotmailLoginUrl);
-        assertThat("login title is correct", driver.getTitle(), containsString("Sign In"));
 
+        assertThat("login title is correct", driver.getTitle(), containsString("Sign In"));
 
         userData user2=new userData();
         user2.createUser(hotmailEmail,hotmailPwd);
 
         loginPageHotmail LP2 = new loginPageHotmail(driver);
-
         homePageHotmail HP2=LP2.loginUserSuccess(user2);
 
-
-
-        ////*[@type='email']
-
-
-        ////span[contains(text(),'        7:53 PM      ')]
-        // driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
-        //CHECK IF EMAIL RECEIVED BY HOTMAIL
-
-        ////*[@aria-label='Unread. QA Engineer. test email from gmailTue May 27 13:39:46 EEST 2014. 1:39 PM. ']
-        ////*[contains(@aria-label,'test email from gmailTue May 27 14:13:16 EEST 2014')]
-//         assertTrue("check if email was send", driver.findElement(By.xpath("//*[contains(@aria-label,'"+topicG+ID+"')]")).isDisplayed());
-        //assertTrue("check if email was send", driver.findElement(By.xpath("//*[contains(@aria-label,'test email from gmailTue May 27 14:13:16 EEST 2014')]")).isDisplayed());
+//CHECK IF EMAIL RECEIVED BY HOTMAIL
 
         HP2.checkIfAmongSend(topicG+ID);
-
         Thread.sleep(sleepTime);
 
-
-        //   System.out.println(je.executeScript("return document.getElementsByClassName('Fm')[0]").toString());
 }catch(Exception e)
         { System.out.println("Exception - > " + e.toString());
         }
@@ -146,137 +127,65 @@ public class VCS_test_1 {
 
        driver.navigate().to(hotmailLoginUrl);
 
-       final JavascriptExecutor je=(JavascriptExecutor) driver;
-
        assertThat("login title is correct", driver.getTitle(), containsString("Sign In"));
 
-       ////*[@type='email']
+       userData user2=new userData();
+       user2.createUser(hotmailEmail,hotmailPwd);
 
-       Action clickEmailField2= new Actions(driver).click(driver.findElement(By.xpath("//*[@type='email']"))).build();
-       clickEmailField2.perform();
+       loginPageHotmail LP2 = new loginPageHotmail(driver);
+       homePageHotmail HP2=LP2.loginUserSuccess(user2);
 
-       Action enterEmail2 = new Actions(driver).sendKeys(hotmailEmail).build();
-       enterEmail2.perform();
-       ////*[@type='password']
+       JavascriptExecutor je=(JavascriptExecutor)driver;
 
-       Action clickPwdField2= new Actions(driver).click(driver.findElement(By.xpath("//*[@type='password']"))).build();
-       clickPwdField2.perform();
-
-       Action enterPwd2 = new Actions(driver).sendKeys(hotmailPwd).build();
-       enterPwd2.perform();
-
-       ////*[@type='submit']
-
-       Action confirmEmailPwd2= new Actions(driver).click(driver.findElement(By.xpath("//*[@type='submit']"))).build();
-       confirmEmailPwd2.perform()   ;
        //SENDING MESSAGE TO GMAIL
 
-//driver.manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS);
 try{
     Thread.sleep(sleepTime);
     assertThat("Correct email box check", je.executeScript("return document.title;").toString(), is("Outlook.com - n0t1m3t0st0p@hotmail.com"));
 
+    //LOGIN INTO MAILBOX
     Thread.sleep(sleepTime);
-
-       je.executeScript("document.getElementById('NewMessage').click()");
-
-    Thread.sleep(sleepTime);
- //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-        je.executeScript("document.getElementById('toBtn').click();;");
-    Thread.sleep(sleepTime);
-    //   driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
-
-       Action enterRcpt = new Actions(driver).sendKeys(rcptAddr2).build();
-       enterRcpt.perform();
-    Thread.sleep(sleepTime);
-       //document.getElementById('fSubject').click();
-//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-       je.executeScript("document.getElementById('fSubject').focus();");
+    HP2.createEmail();
 
     Thread.sleep(sleepTime);
-       //driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
-    String topic1= topicH +ID;
-
-       Action enterSubj = new Actions(driver).sendKeys(topic1).build();
-       enterSubj.perform();
-
-//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    Thread.sleep(sleepTime);
-       je.executeScript("window[\"ComposeRteEditor_surface\"].contentDocument.children[0].children[1].innerHTML=\""+body2+"\"");
-
-//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    Thread.sleep(sleepTime);
-    je.executeScript("document.getElementById(\"SendMessage\").click();");
-
-
-
-
-//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-
-       //CHECKING EMAIL IS IN SEND
-
-       //driver.findElement(By.xpath("//li[contains(@title,'Sent')]")).click();
-    Thread.sleep(sleepTime);
-
-    je.executeScript("document.getElementsByClassName('ellipsis')[4].click();");
-       //document.getElementsByClassName("c-MessageRow ia_hc animatable Draggable mlRd mlUnFlg mlUnsel t_s_hov")[0].click()
-       //document.getElementsByClassName("c-MessageRow ia_hc animatable Draggable mlRd mlUnFlg mlUnsel t_s_hov")[1].children[0].children[0].getAttribute("aria-label")
-
-
- //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    HP2.setRcpt(rcptAddr2);
 
     Thread.sleep(sleepTime);
+    HP2.setSubject(topicH+ID);
 
-    //document.getElementsByClassName("c-MessageRow ia_hc animatable Draggable mlRd mlUnFlg mlUnsel t_s_hov")[0].children[3].children[0].innerHTML
+    Thread.sleep(sleepTime);
+    HP2.setBody(body2);
 
-    //String topic2 = (String)je.executeScript("return document.getElementsByClassName(\"c-MessageRow ia_hc animatable Draggable mlRd mlUnFlg mlUnsel t_s_hov\")[1].children[0].children[0].getAttribute(\"aria-label\");");
-    String topic2 = (String)je.executeScript("return document.getElementsByClassName(\"c-MessageRow ia_hc animatable Draggable mlRd mlUnFlg mlUnsel t_s_hov\")[0].children[3].children[0].innerHTML\n");
+    Thread.sleep(sleepTime);
+    HP2.sendEmail();
 
-      //System.out.println(je.executeScript("return $(\".rmSubject\").text();").toString());
-      // System.out.println(topicG + ID);
+    //CHECKING EMAIL IS IN SEND
 
- //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-       assertTrue("email was received by hotmail",topic2.contains(topic1));
+    Thread.sleep(sleepTime);
+    HP2.gotoOutbox();
 
+    Thread.sleep(sleepTime);
+    HP2.checkIfAmongSend2(topicH + ID);
 
-
+    Thread.sleep(sleepTime);
   // CHECK IF GMAIL BOX RECEIVED THE MAIL
 
     driver.navigate().to(gmailLoginUrl);
 
-   // assertThat("login title is correct", driver.getTitle(), containsString("Gmail"));
+    userData user1=new userData();
+    user1.createUser(gmailEmail, gmailPwd);
 
-       Action clickEmailField= new Actions(driver).click(driver.findElement(By.xpath("//*[@id='Email']"))).build();
-       clickEmailField.perform();
-       Action enterEmail = new Actions(driver).sendKeys(gmailEmail).build();
-       enterEmail.perform();
+    loginPageGmail LP = new loginPageGmail(driver);
+    homePageGmail HP = new homePageGmail(driver);
 
-       Action clickPwdField= new Actions(driver).click(driver.findElement(By.xpath("//*[@id='Passwd']"))).build();
-       clickPwdField.perform();
-       Action enterPwd = new Actions(driver).sendKeys(gmailPwd).build();
-       enterPwd.perform();
+    HP=LP.loginUserSuccess(user1);
 
-       ////*[@id='signIn']
-
-       Action confirmEmailPwd= new Actions(driver).click(driver.findElement(By.xpath("//*[@id='signIn']"))).build();
-       confirmEmailPwd.perform();
-
-       ////*[@title='n0t1m3t0st0p@gmail.com']
-
-       driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-       assertThat("login into n0t1m3t0st0p@gmail.com was succesfull", driver.findElement(By.xpath("//*[@title='n0t1m3t0st0p@gmail.com']")).getText(), containsString("n0t1m3t0st0p@gmail.com"));
+    driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+    assertThat("login into n0t1m3t0st0p@gmail.com was succesfull", driver.findElement(By.xpath("//*[@title='n0t1m3t0st0p@gmail.com']")).getText(), containsString("n0t1m3t0st0p@gmail.com"));
 
 
-       driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-
-       //b[contains(text(),'test email from hotmailThu Jun 05 22:55:01 EEST 2014')]
-       assertTrue("Hotmail Email is received by Gmail",(driver.findElement(By.xpath("//b[contains(text(),'" + topic1 + "')]")).isDisplayed()));
-
+    driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+    HP.checkIfAmongReceived(topicH + ID);
 }
 catch(Exception e)
 { System.out.println("Exception - > " + e.toString());
@@ -286,8 +195,5 @@ catch(Exception e)
     public void CloseDriver()
     {driver.close();}
 
-   /*@AfterClass
-    public static void CloseDriver2()
-    {driver.close();}
-*/
+
 }

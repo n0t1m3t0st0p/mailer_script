@@ -46,8 +46,6 @@ public class homePageGmail {
 
         Action enterBody = new Actions(driver).sendKeys(body).build();
         enterBody.perform();
-
-        ////*[@role='button'][@tabindex='1']
     }
 
     public void sendEmail()
@@ -61,6 +59,10 @@ public class homePageGmail {
 
     public void checkIfAmongSend(String subject)
     {
-      assertTrue("check if email was send", driver.findElement(By.xpath("//span[contains(text(),'" + subject + "')]")).isDisplayed());
+      assertTrue("check if email was send by gmail", driver.findElement(By.xpath("//span[contains(text(),'" + subject + "')]")).isDisplayed());
+    }
+
+    public void checkIfAmongReceived(String subject)
+    {           assertTrue("Hotmail Email is received by Gmail",(driver.findElement(By.xpath("//b[contains(text(),'" + subject+ "')]")).isDisplayed()));
     }
 }

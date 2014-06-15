@@ -67,19 +67,8 @@
       <file leaf-file-name="VCS_test_1.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/VCS_test_1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="38" selection-start="3578" selection-end="3578" vertical-scroll-proportion="0.6040462" vertical-offset="1644" max-vertical-offset="4862">
+            <state line="173" column="0" selection-start="4647" selection-end="4647" vertical-scroll-proportion="0.15841584" vertical-offset="2673" max-vertical-offset="3264">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loginPageHotmail.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/loginPageHotmail.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="35" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0" vertical-offset="239" max-vertical-offset="782">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -87,18 +76,7 @@
       <file leaf-file-name="homePageHotmail.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/homePageHotmail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="16" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0" vertical-offset="29" max-vertical-offset="476">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loginPageGmail.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/loginPageGmail.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="8" selection-start="1581" selection-end="1712" vertical-scroll-proportion="0.0" vertical-offset="219" max-vertical-offset="1003">
+            <state line="66" column="27" selection-start="2273" selection-end="2273" vertical-scroll-proportion="0.0" vertical-offset="847" max-vertical-offset="1326">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,7 +87,7 @@
       <file leaf-file-name="homePageGmail.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/homePageGmail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="30" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0" vertical-offset="743" max-vertical-offset="1224">
+            <state line="64" column="52" selection-start="2387" selection-end="2387" vertical-scroll-proportion="0.0" vertical-offset="752" max-vertical-offset="1258">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -148,6 +126,7 @@
         <option value="$PROJECT_DIR$/src/test/java/userData.java" />
         <option value="$PROJECT_DIR$/src/test/java/loginPageHotmail.java" />
         <option value="$PROJECT_DIR$/src/test/java/homePageHotmail.java" />
+        <option value="$PROJECT_DIR$/src/test/java/homePageGmail.java" />
         <option value="$PROJECT_DIR$/src/test/java/VCS_test_1.java" />
       </list>
     </option>
@@ -254,13 +233,14 @@
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
+    <property name="SearchEverywhereHistory" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.VCS_test_1.gmailSend">
+  <component name="RunManager" selected="JUnit.VCS_test_1">
     <configuration default="false" name="VCS_test_1.gmailSend" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="script_1" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -537,9 +517,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.VCS_test_1.gmailSend" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.VCS_test_1" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.VCS_test_1.hotmailSend" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.VCS_test_1" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.VCS_test_1.hotmailSend" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.VCS_test_1.gmailSend" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.VCS_test_1.gmailReceive" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.VCS_test_1.checkHotmailSend" />
       </list>
@@ -559,7 +539,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="748" extended-state="6" />
+    <frame x="-4" y="-4" width="1374" height="748" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -578,8 +558,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40849194" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3782542" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16837482" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32159266" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297546" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -816,7 +796,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/homePageGmail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="30" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0" vertical-offset="743" max-vertical-offset="1224">
+        <state line="64" column="52" selection-start="2387" selection-end="2387" vertical-scroll-proportion="0.0" vertical-offset="752" max-vertical-offset="1258">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -825,7 +805,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/homePageHotmail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="16" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0" vertical-offset="29" max-vertical-offset="476">
+        <state line="66" column="27" selection-start="2273" selection-end="2273" vertical-scroll-proportion="0.0" vertical-offset="847" max-vertical-offset="1326">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -834,7 +814,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/VCS_test_1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="38" selection-start="3578" selection-end="3578" vertical-scroll-proportion="0.6040462" vertical-offset="1644" max-vertical-offset="4862">
+        <state line="173" column="0" selection-start="4647" selection-end="4647" vertical-scroll-proportion="0.15841584" vertical-offset="2673" max-vertical-offset="3264">
           <folding />
         </state>
       </provider>
