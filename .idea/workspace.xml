@@ -67,7 +67,38 @@
       <file leaf-file-name="VCS_test_1.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/VCS_test_1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="209" column="0" selection-start="8464" selection-end="8464" vertical-scroll-proportion="0.37913907" vertical-offset="3052" max-vertical-offset="5984">
+            <state line="86" column="23" selection-start="2775" selection-end="2775" vertical-scroll-proportion="0.1852861" vertical-offset="1122" max-vertical-offset="5083">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loginPage.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/loginPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="8" selection-start="1525" selection-end="1525" vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="1003">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="homePage.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/homePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="8" selection-start="1720" selection-end="1720" vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="1037">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userData.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/userData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="8" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
               <folding />
             </state>
           </provider>
@@ -88,16 +119,19 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Driver.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/VCS_test_1.java" />
         <option value="$PROJECT_DIR$/src/test/java/VCS_test_1_1_PO.java" />
+        <option value="$PROJECT_DIR$/src/test/java/userData.java" />
+        <option value="$PROJECT_DIR$/src/test/java/loginPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/homePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/VCS_test_1.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="1" />
-    <option name="width" value="1364" />
-    <option name="height" value="738" />
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
+    <option name="width" value="1374" />
+    <option name="height" value="748" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -201,7 +235,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.VCS_test_1.hotmailSend">
+  <component name="RunManager" selected="JUnit.VCS_test_1.gmailSend">
     <configuration default="false" name="VCS_test_1.gmailSend" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="script_1" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -478,9 +512,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.VCS_test_1.hotmailSend" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.VCS_test_1.gmailSend" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.VCS_test_1" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.VCS_test_1.gmailSend" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.VCS_test_1" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.VCS_test_1.hotmailSend" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.VCS_test_1.gmailReceive" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.VCS_test_1.checkHotmailSend" />
       </list>
@@ -500,7 +534,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1364" height="738" extended-state="0" />
+    <frame x="-4" y="-4" width="1374" height="748" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -513,17 +547,17 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297546" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" x="62" y="276" width="1304" height="215" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30321592" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40855458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37990582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40855458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3782542" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297546" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3036566" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -537,20 +571,20 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297546" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297546" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.53527606" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6438792" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297546" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" x="62" y="276" width="1304" height="215" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.303681" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3036566" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4056604" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40855458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23312883" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37947124" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -730,9 +764,34 @@
         <state line="13" column="18" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1700" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/userData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="8" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/loginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="8" selection-start="1525" selection-end="1525" vertical-scroll-proportion="0.0" vertical-offset="233" max-vertical-offset="1003">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/homePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="8" selection-start="1720" selection-end="1720" vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="1037">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/VCS_test_1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="209" column="0" selection-start="8464" selection-end="8464" vertical-scroll-proportion="0.37913907" vertical-offset="3052" max-vertical-offset="5984">
+        <state line="86" column="23" selection-start="2775" selection-end="2775" vertical-scroll-proportion="0.1852861" vertical-offset="1122" max-vertical-offset="5083">
           <folding />
         </state>
       </provider>

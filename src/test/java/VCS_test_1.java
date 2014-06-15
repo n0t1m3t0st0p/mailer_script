@@ -59,90 +59,37 @@ public class VCS_test_1 {
     {
         driver.navigate().to(gmailLoginUrl);
 
+        userData user1=new userData();
+        user1.createUser(gmailEmail,gmailPwd);
+
         //GMAIL LOGIN DIALOGUE
+        loginPage LP = new loginPage(driver);
+      //  LP.loginUserError(user1);
+
+        homePage HP = new homePage(driver);
+
+        HP=LP.loginUserSuccess(user1);
 
 
-     //   assertThat("login title is correct", driver.getTitle(), containsString("Gmail"));
-        new WebDriverWait(driver,10).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='Email']")));
-
-        Action clickEmailField= new Actions(driver).click(driver.findElement(By.xpath("//*[@id='Email']"))).build();
-        clickEmailField.perform();
-
-        Action enterEmail = new Actions(driver).sendKeys(gmailEmail).build();
-        enterEmail.perform();
-
-        new WebDriverWait(driver,5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='Passwd']")));
-
-
-        Action clickPwdField= new Actions(driver).click(driver.findElement(By.xpath("//*[@id='Passwd']"))).build();
-        clickPwdField.perform();
-        Action enterPwd = new Actions(driver).sendKeys(gmailPwd).build();
-        enterPwd.perform();
-
-        ////*[@id='signIn']
-
-        new WebDriverWait(driver,5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='signIn']")));
-
-        Action confirmEmailPwd= new Actions(driver).click(driver.findElement(By.xpath("//*[@id='signIn']"))).build();
-        confirmEmailPwd.perform();
-
-        ////*[@title='n0t1m3t0st0p@gmail.com']
-
-try
+        try
 {
-//driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+//MESSAGE SEND START
+
         Thread.sleep(sleepTime*4);
-       //assertTrue("login into n0t1m3t0st0p@gmail.com was succesfull", driver.findElement(By.xpath("//title[contains(text(),'n0t1m3t0st0p@gmail.com')]")).isDisplayed());
-
-        ////*[@class='T-I J-J5-Ji T-I-KE L3']
-
-        Action createEmail= new Actions(driver).click(driver.findElement(By.xpath("//*[@class='T-I J-J5-Ji T-I-KE L3']"))).build();
-        createEmail.perform();
-
-        ////textarea[@name='to']
-        //driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+        HP.createEmail();
 
         Thread.sleep(sleepTime);
-        Action clickRecipientField= new Actions(driver).click(driver.findElement(By.xpath("//textarea[@name='to']"))).build();
-        clickRecipientField.perform();
+        HP.setRcpt(rcptAddr1);
 
-        Action enterRcpt = new Actions(driver).sendKeys(rcptAddr1).build();
-        enterRcpt.perform();
+        HP.setSubject(topicG +ID);
 
-        ////input[@name='subjectbox']
-
-        Action clickTopicField= new Actions(driver).click(driver.findElement(By.xpath("//input[@name='subjectbox']"))).build();
-        clickTopicField.perform();
-
-
-        Action enterTopic = new Actions(driver).sendKeys(topicG +ID).build();
-        enterTopic.perform();
-
-        ////iframe[@tabindex='1']
-
-        WebElement emailFrame=driver.findElement(By.xpath("//iframe[@tabindex='1']"));
-        driver.switchTo().frame(emailFrame);
-        Action clickOnEmailBody= new Actions(driver).click(driver.findElement(By.xpath("//*[@role='textbox']"))).build();
-        clickOnEmailBody.perform();
-
-        Action enterBody = new Actions(driver).sendKeys(body1).build();
-        enterBody.perform();
-
-        ////*[@role='button'][@tabindex='1']
-
-        driver.switchTo().defaultContent();
-        Action sendEmail= new Actions(driver).click(driver.findElement(By.xpath("//*[@role='button'][@tabindex='1']"))).build();
-        sendEmail.perform();
+        HP.setBody(body1);
+        HP.sendEmail();
 
 //MESSAGE SEND END
 
 //MESSAGE OUTBOX CHECK
         Thread.sleep(sleepTime);
-     ////span[@id=':7u'][contains(text(),'test email from gmail')]
-
-     //   assertTrue("Assert that email was send", driver.findElement(By.xpath("//div[@class='vh'][contains(text(),'Письмо отправлено.')]//div[@class='vh'][contains(text(),'Письмо отправлено.')]")).isDisplayed());
-
-     ////*[@href='https://mail.google.com/mail/#sent']
 
         Action gotoOutbox= new Actions(driver).click(driver.findElement(By.xpath("//*[@href='https://mail.google.com/mail/#sent']"))).build();
         gotoOutbox.perform();
