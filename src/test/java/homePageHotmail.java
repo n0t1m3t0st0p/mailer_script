@@ -14,7 +14,7 @@ public class homePageHotmail {
     public homePageHotmail(WebDriver driver)
     {this.driver=driver;}
 
-    public void checkIfAmongSend(String subject)
+    public void checkIfAmongReceived(String subject)
     {        JavascriptExecutor je=(JavascriptExecutor) driver;
 
         String topic2= je.executeScript("return document.getElementsByClassName('c-MessageRow ia_hc animatable Draggable mlUnrd mlUnFlg mlUnsel t_s_hov')[0].children[3].children[0].innerHTML").toString();
@@ -61,11 +61,11 @@ public class homePageHotmail {
         je.executeScript("document.getElementsByClassName('ellipsis')[4].click();");
     }
 
-public void checkIfAmongSend2(String topic)
+public void checkIfAmongSend(String topic)
     {
         JavascriptExecutor je=(JavascriptExecutor)driver;
         String topic2 = (String)je.executeScript("return document.getElementsByClassName(\"c-MessageRow ia_hc animatable Draggable mlRd mlUnFlg mlUnsel t_s_hov\")[0].children[3].children[0].innerHTML\n");
-        assertTrue("check if email was send by gmail",topic2.contains(topic));
+        assertTrue("check if email was send by hotmail",topic2.contains(topic));
     }
 
 

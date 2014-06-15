@@ -1,9 +1,6 @@
 import org.junit.*;
 import org.junit.Test;
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
-
-import org.openqa.selenium.interactions.Action;
 
 import java.util.concurrent.TimeUnit;
 
@@ -91,7 +88,7 @@ public class VCS_test_1 {
 
         String topic1=topicG+ID;
 
-        HP.checkIfAmongSend(topicG+ID);
+        HP.checkIfAmongSend(topicG + ID);
 
 //HOTMAIL DELIVERY CHECK
 
@@ -107,7 +104,7 @@ public class VCS_test_1 {
 
 //CHECK IF EMAIL RECEIVED BY HOTMAIL
 
-        HP2.checkIfAmongSend(topicG+ID);
+        HP2.checkIfAmongReceived(topicG + ID);
         Thread.sleep(sleepTime);
 
 }catch(Exception e)
@@ -165,7 +162,7 @@ try{
     HP2.gotoOutbox();
 
     Thread.sleep(sleepTime);
-    HP2.checkIfAmongSend2(topicH + ID);
+    HP2.checkIfAmongSend(topicH + ID);
 
     Thread.sleep(sleepTime);
   // CHECK IF GMAIL BOX RECEIVED THE MAIL

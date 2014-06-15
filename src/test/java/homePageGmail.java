@@ -59,7 +59,7 @@ public class homePageGmail {
 
     public void checkIfAmongSend(String subject)
     {
-      assertTrue("check if email was send by gmail", driver.findElement(By.xpath("//span[contains(text(),'" + subject + "')]")).isDisplayed());
+      assertTrue("check if email was send by hotmail", driver.findElement(By.xpath("//span[contains(text(),'" + subject + "')]")).isDisplayed());
     }
 
     public void checkIfAmongReceived(String subject)
