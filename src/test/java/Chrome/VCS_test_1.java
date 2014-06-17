@@ -78,7 +78,8 @@ public class VCS_test_1 {
         Thread.sleep(sleepTime);
         HP.setRcpt(rcptAddr1);
 
-        HP.setSubject(topicG +ID);
+    Thread.sleep(sleepTime);
+    HP.setSubject(topicG +ID);
 
         HP.setBody(body1);
 
@@ -90,7 +91,6 @@ public class VCS_test_1 {
         HP.gotoOutbox();
         Thread.sleep(sleepTime);
 
-        String topic1=topicG+ID;
 
         HP.checkIfAmongSend(topicG + ID);
 

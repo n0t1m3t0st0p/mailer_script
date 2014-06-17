@@ -1,6 +1,7 @@
 package Chrome;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
@@ -31,23 +32,31 @@ public class homePageGmail {
     }
 
     public void setSubject(String subject)
-    {    Action clickTopicField= new Actions(driver).click(driver.findElement(By.xpath("//input[@name='subjectbox']"))).build();
-        clickTopicField.perform();
+    {
 
 
-        Action enterTopic = new Actions(driver).sendKeys(subject).build();
-        enterTopic.perform();
+        JavascriptExecutor je=(JavascriptExecutor)driver;
+        je.executeScript("document.getElementsByName('subjectbox')[0].value='"+subject+"';");
+
+
     }
 
     public void setBody(String body)
 
-    { WebElement emailFrame=driver.findElement(By.xpath("//iframe[@tabindex='1']"));
+    {   /*WebElement emailFrame=driver.findElement(By.xpath("//iframe[@tabindex='1']"));
         driver.switchTo().frame(emailFrame);
         Action clickOnEmailBody= new Actions(driver).click(driver.findElement(By.xpath("//*[@role='textbox']"))).build();
         clickOnEmailBody.perform();
 
         Action enterBody = new Actions(driver).sendKeys(body).build();
         enterBody.perform();
+        */
+        //document.getElementsByClassName('Am Al editable LW-avf')[0].innerHTML
+
+
+        JavascriptExecutor je=(JavascriptExecutor)driver;
+        je.executeScript("document.getElementsByClassName('Am Al editable LW-avf')[0].innerHTML='"+body+"';");
+
     }
 
     public void sendEmail()

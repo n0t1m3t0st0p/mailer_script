@@ -55,6 +55,38 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/test/java/Chrome/homePageGmail.java" line="45" class="Chrome.homePageGmail" package="Chrome">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/test/java/Chrome/homePageGmail.java" line="47" class="Chrome.homePageGmail" package="Chrome">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -65,9 +97,9 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="VCS_test_1.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Opera/VCS_test_1.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Chrome/VCS_test_1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="19" selection-start="1996" selection-end="1996" vertical-scroll-proportion="0.9047619" vertical-offset="370" max-vertical-offset="3298">
+            <state line="29" column="44" selection-start="1235" selection-end="1250" vertical-scroll-proportion="0.4827586" vertical-offset="110" max-vertical-offset="3298">
               <folding />
             </state>
           </provider>
@@ -108,14 +140,16 @@
         <option value="$PROJECT_DIR$/src/test/java/Mozilla/VCS_test_1.java" />
         <option value="$PROJECT_DIR$/src/test/java/Opera/userData.java" />
         <option value="$PROJECT_DIR$/src/test/java/Opera/VCS_test_1.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Chrome/homePageGmail.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Chrome/VCS_test_1.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="1" />
-    <option name="width" value="1364" />
-    <option name="height" value="738" />
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
+    <option name="width" value="1374" />
+    <option name="height" value="748" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -160,58 +194,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="script_1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="script_1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="script_1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Opera" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="script_1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="script_1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Mozilla" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -309,7 +291,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.VCS_test_1 (1)">
+  <component name="RunManager" selected="JUnit.VCS_test_1">
     <configuration default="false" name="VCS_test_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="script_1" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -318,50 +300,6 @@
       <option name="MAIN_CLASS_NAME" value="Chrome.VCS_test_1" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="VCS_test_1_Ch.gmailSend" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="script_1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="VCS_test_1_Ch" />
-      <option name="METHOD_NAME" value="gmailSend" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="VCS_test_1.gmailSend" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="script_1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Ie" />
-      <option name="MAIN_CLASS_NAME" value="Ie.VCS_test_1" />
-      <option name="METHOD_NAME" value="gmailSend" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -420,6 +358,56 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="VCS_test_1.gmailSend (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="script_1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Chrome" />
+      <option name="MAIN_CLASS_NAME" value="Chrome.VCS_test_1" />
+      <option name="METHOD_NAME" value="gmailSend" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="VCS_test_1.hotmailSend" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="script_1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Chrome" />
+      <option name="MAIN_CLASS_NAME" value="Chrome.VCS_test_1" />
+      <option name="METHOD_NAME" value="hotmailSend" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -454,19 +442,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -492,6 +467,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -549,18 +537,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.VCS_test_1" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.VCS_test_1_Ch.gmailSend" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.VCS_test_1.gmailSend" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.VCS_test_1.gmailSend" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.VCS_test_1 (1)" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.VCS_test_1.gmailSend" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.VCS_test_1 (1)" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.VCS_test_1.gmailSend (1)" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.VCS_test_1.hotmailSend" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.VCS_test_1 (1)" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.VCS_test_1" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.VCS_test_1.gmailSend" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.VCS_test_1.gmailSend" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.VCS_test_1_Ch.gmailSend" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.VCS_test_1" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.VCS_test_1.hotmailSend" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.VCS_test_1.gmailSend (1)" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.VCS_test_1 (1)" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.VCS_test_1.gmailSend" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -569,6 +557,23 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="aac8653d-b237-47c8-8003-2df25ab636b1" name="Default" comment="" />
@@ -578,17 +583,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1364" height="738" extended-state="1" />
-    <editor active="true" />
+    <frame x="-4" y="-4" width="1374" height="748" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297546" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970452" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22358346" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2159265" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297546" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" x="62" y="276" width="1304" height="215" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -598,12 +602,13 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23451327" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31881803" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23279649" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31852987" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970452" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -613,22 +618,22 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297546" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297546" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970452" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6438792" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21898928" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297546" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" x="62" y="276" width="1304" height="215" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3036566" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30321592" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40855458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23279649" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37947124" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31852987" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -652,6 +657,48 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Chrome/VCS_test_1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="16" selection-start="2577" selection-end="2577" vertical-scroll-proportion="0.0" vertical-offset="1411" max-vertical-offset="3502">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Chrome/homePageGmail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="16" selection-start="1346" selection-end="1346" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1241">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Chrome/VCS_test_1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="14" selection-start="2575" selection-end="2575" vertical-scroll-proportion="0.0" vertical-offset="902" max-vertical-offset="3315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Chrome/homePageGmail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="8" selection-start="1376" selection-end="1376" vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="1360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Chrome/VCS_test_1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="11" selection-start="2540" selection-end="2540" vertical-scroll-proportion="0.0" vertical-offset="1377" max-vertical-offset="3502">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Chrome/homePageGmail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="16" selection-start="1025" selection-end="1025" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1241">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="112" column="77" selection-start="3771" selection-end="3771" vertical-scroll-proportion="0.0" vertical-offset="1904" max-vertical-offset="3876">
@@ -661,23 +708,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Ie/homePageHotmail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="27" selection-start="2273" selection-end="2273" vertical-scroll-proportion="0.0" vertical-offset="847" max-vertical-offset="1326">
-          <folding />
-        </state>
+        <state line="66" column="27" selection-start="2273" selection-end="2273" vertical-scroll-proportion="0.0" vertical-offset="847" max-vertical-offset="1326" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Ie/homePageGmail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="52" selection-start="2387" selection-end="2387" vertical-scroll-proportion="0.0" vertical-offset="752" max-vertical-offset="1258">
-          <folding />
-        </state>
+        <state line="64" column="52" selection-start="2387" selection-end="2387" vertical-scroll-proportion="0.0" vertical-offset="752" max-vertical-offset="1258" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Ie/userData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="8" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="272">
-          <folding />
-        </state>
+        <state line="4" column="8" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="272" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -702,41 +743,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Ie/loginPageHotmail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="35" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="782">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="14" column="35" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="782" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Ie/loginPageGmail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="8" selection-start="1581" selection-end="1712" vertical-scroll-proportion="0.0" vertical-offset="449" max-vertical-offset="1003">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="42" column="8" selection-start="1581" selection-end="1712" vertical-scroll-proportion="0.0" vertical-offset="449" max-vertical-offset="1003" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Ie/homePageGmail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="48" selection-start="2232" selection-end="2232" vertical-scroll-proportion="0.0" vertical-offset="739" max-vertical-offset="1156">
-          <folding />
-        </state>
+        <state line="61" column="48" selection-start="2232" selection-end="2232" vertical-scroll-proportion="0.0" vertical-offset="739" max-vertical-offset="1156" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Ie/homePageHotmail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Ie/userData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="8" selection-start="71" selection-end="71" vertical-scroll-proportion="0.16306955" vertical-offset="0" max-vertical-offset="417">
-          <folding />
-        </state>
+        <state line="4" column="8" selection-start="71" selection-end="71" vertical-scroll-proportion="0.16306955" vertical-offset="0" max-vertical-offset="417" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Driver.java">
@@ -748,23 +775,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Mozilla/loginPageGmail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="952">
-          <folding />
-        </state>
+        <state line="12" column="13" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="952" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Mozilla/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="957" selection-end="957" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="3910">
-          <folding />
-        </state>
+        <state line="26" column="13" selection-start="957" selection-end="957" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="3910" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Ie/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="952" selection-end="952" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="3910">
-          <folding />
-        </state>
+        <state line="26" column="13" selection-start="952" selection-end="952" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="3910" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Chrome/Driver.java">
@@ -774,25 +795,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Chrome/loginPageGmail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="347" selection-end="347" vertical-scroll-proportion="0.20987654" vertical-offset="34" max-vertical-offset="952">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Mozilla/VCS_test_1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="30" selection-start="2178" selection-end="2179" vertical-scroll-proportion="0.0" vertical-offset="700" max-vertical-offset="3298">
-          <folding />
-        </state>
+        <state line="61" column="30" selection-start="2178" selection-end="2179" vertical-scroll-proportion="0.0" vertical-offset="700" max-vertical-offset="3298" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Ie/VCS_test_1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="20" selection-start="1991" selection-end="1991" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="3298">
-          <folding />
-        </state>
+        <state line="54" column="20" selection-start="1991" selection-end="1991" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="3298" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -804,14 +814,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Opera/userData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-          <folding />
-        </state>
+        <state line="5" column="13" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Opera/VCS_test_1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="19" selection-start="1996" selection-end="1996" vertical-scroll-proportion="0.9047619" vertical-offset="370" max-vertical-offset="3298">
+        <state line="45" column="5" selection-start="1839" selection-end="1839" vertical-scroll-proportion="0.52130324" vertical-offset="370" max-vertical-offset="3298" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Chrome/loginPageGmail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Chrome/homePageHotmail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="28" selection-start="898" selection-end="898" vertical-scroll-proportion="0.0" vertical-offset="77" max-vertical-offset="1275">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Chrome/homePageGmail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="10" selection-start="1662" selection-end="1662" vertical-scroll-proportion="0.0" vertical-offset="359" max-vertical-offset="1326">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Chrome/VCS_test_1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="44" selection-start="1235" selection-end="1250" vertical-scroll-proportion="0.4827586" vertical-offset="110" max-vertical-offset="3298">
           <folding />
         </state>
       </provider>
