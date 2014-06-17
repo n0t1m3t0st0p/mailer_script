@@ -1,3 +1,5 @@
+package Mozilla;
+
 import com.opera.core.systems.OperaDriver;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.UnsupportedCommandException;
