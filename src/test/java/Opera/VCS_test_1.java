@@ -38,12 +38,6 @@ public class VCS_test_1 {
     final int sleepTime=2000;
 
 
-   /* @BeforeClass
-   public static void DriverInit()
-   {    Driver.set(Driver.BrowserName.FIREFOX);
-       driver = Driver.get();
-   }
-   */
 
     @Before
     public void DriverInit()
@@ -77,12 +71,15 @@ public class VCS_test_1 {
 
         Thread.sleep(sleepTime);
         HP.setRcpt(rcptAddr1);
+         Thread.sleep(sleepTime);
 
         HP.setSubject(topicG +ID);
+        Thread.sleep(sleepTime);
 
         HP.setBody(body1);
+      Thread.sleep(sleepTime);
 
-        HP.sendEmail();
+    HP.sendEmail();
 
 //MESSAGE OUTBOX CHECK
 
