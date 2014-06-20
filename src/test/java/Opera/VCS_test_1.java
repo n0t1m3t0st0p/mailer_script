@@ -99,11 +99,13 @@ public class VCS_test_1 {
 
         userData user2=new userData();
         user2.createUser(hotmailEmail,hotmailPwd);
+        Thread.sleep(sleepTime);
 
         loginPageHotmail LP2 = new loginPageHotmail(driver);
         homePageHotmail HP2=LP2.loginUserSuccess(user2);
 
 //CHECK IF EMAIL RECEIVED BY HOTMAIL
+        Thread.sleep(sleepTime*4);
 
         HP2.checkIfAmongReceived(topicG + ID);
         Thread.sleep(sleepTime);
