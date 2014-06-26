@@ -36,14 +36,8 @@ public class VCS_test_1 {
     final String body2="Hello! here is my test email from Hotmail service";
     final String ID=new java.util.Date().toString();
     final int sleepTime=2000;
+    final int sleepTime2=2000;
 
-
-   /* @BeforeClass
-   public static void DriverInit()
-   {    Driver.set(Driver.BrowserName.FIREFOX);
-       driver = Driver.get();
-   }
-   */
 
     @Before
     public void DriverInit()
@@ -77,12 +71,15 @@ public class VCS_test_1 {
 
         Thread.sleep(sleepTime);
         HP.setRcpt(rcptAddr1);
+         Thread.sleep(sleepTime);
 
         HP.setSubject(topicG +ID);
+        Thread.sleep(sleepTime);
 
         HP.setBody(body1);
+      Thread.sleep(sleepTime);
 
-        HP.sendEmail();
+    HP.sendEmail();
 
 //MESSAGE OUTBOX CHECK
 
@@ -102,11 +99,13 @@ public class VCS_test_1 {
 
         userData user2=new userData();
         user2.createUser(hotmailEmail,hotmailPwd);
+        Thread.sleep(sleepTime);
 
         loginPageHotmail LP2 = new loginPageHotmail(driver);
         homePageHotmail HP2=LP2.loginUserSuccess(user2);
 
 //CHECK IF EMAIL RECEIVED BY HOTMAIL
+        Thread.sleep(sleepTime*4);
 
         HP2.checkIfAmongReceived(topicG + ID);
         Thread.sleep(sleepTime);
@@ -128,7 +127,7 @@ public class VCS_test_1 {
 
        driver.navigate().to(hotmailLoginUrl);
 
-       assertThat("login title is correct", driver.getTitle(), containsString("Sign In"));
+//       assertThat("login title is correct", driver.getTitle(), containsString("Sign In"));
 
        userData user2=new userData();
        user2.createUser(hotmailEmail,hotmailPwd);
@@ -136,39 +135,40 @@ public class VCS_test_1 {
        loginPageHotmail LP2 = new loginPageHotmail(driver);
        homePageHotmail HP2=LP2.loginUserSuccess(user2);
 
-       JavascriptExecutor je=(JavascriptExecutor)driver;
 
        //SENDING MESSAGE TO GMAIL
 
 try{
-    Thread.sleep(sleepTime);
+    JavascriptExecutor je=(JavascriptExecutor)driver;
+    Thread.sleep(sleepTime2);
     assertThat("Correct email box check", je.executeScript("return document.title;").toString(), is("Outlook.com - n0t1m3t0st0p@hotmail.com"));
 
     //LOGIN INTO MAILBOX
-    Thread.sleep(sleepTime);
+    Thread.sleep(sleepTime2);
     HP2.createEmail();
 
-    Thread.sleep(sleepTime);
+    Thread.sleep(sleepTime2);
     HP2.setRcpt(rcptAddr2);
 
-    Thread.sleep(sleepTime);
-    HP2.setSubject(topicH+ID);
+    Thread.sleep(sleepTime2);
 
-    Thread.sleep(sleepTime);
+   HP2.setSubject(topicH+ID);
+
+    Thread.sleep(sleepTime2);
     HP2.setBody(body2);
 
-    Thread.sleep(sleepTime);
+    Thread.sleep(sleepTime2);
     HP2.sendEmail();
 
     //CHECKING EMAIL IS IN SEND
 
-    Thread.sleep(sleepTime);
+    Thread.sleep(sleepTime2);
     HP2.gotoOutbox();
 
-    Thread.sleep(sleepTime);
-    HP2.checkIfAmongSend(topicH + ID);
+    Thread.sleep(sleepTime2);
+    HP2.checkIfAmongSend(topicH+ID);
 
-    Thread.sleep(sleepTime);
+    Thread.sleep(sleepTime2);
   // CHECK IF GMAIL BOX RECEIVED THE MAIL
 
     driver.navigate().to(gmailLoginUrl);

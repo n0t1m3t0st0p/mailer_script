@@ -1,11 +1,7 @@
 package Ie;
 
-import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Action;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  * Created by user on 6/15/14.
@@ -20,7 +16,7 @@ public class loginPageGmail {
 
         private void loginUser(userData user)
         {
-        new WebDriverWait(driver,10).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='Email']")));
+      /*  new WebDriverWait(driver,10).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='Email']")));
 
         Action clickEmailField= new Actions(driver).click(driver.findElement(By.xpath("//*[@id='Email']"))).build();
         clickEmailField.perform();
@@ -33,13 +29,21 @@ public class loginPageGmail {
 
         Action clickPwdField= new Actions(driver).click(driver.findElement(By.xpath("//*[@id='Passwd']"))).build();
         clickPwdField.perform();
+
         Action enterPwd = new Actions(driver).sendKeys(userData.password).build();
         enterPwd.perform();
 
         new WebDriverWait(driver,5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='signIn']")));
+    */
 
-        Action confirmEmailPwd= new Actions(driver).click(driver.findElement(By.xpath("//*[@id='signIn']"))).build();
-        confirmEmailPwd.perform();
+        JavascriptExecutor je=(JavascriptExecutor) driver;
+
+            je.executeScript("document.getElementById('Email').value='"+ userData.email+"';");
+
+            je.executeScript("document.getElementById('Passwd').value='"+ userData.password+"';");
+
+            je.executeScript("document.getElementById('signIn').click()");
+
         }
 
         public homePageGmail loginUserSuccess(userData user)
