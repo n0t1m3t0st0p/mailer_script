@@ -1,8 +1,10 @@
 package Chrome;
 
-import org.junit.After;
+/*import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+*/
+import org.testng.annotations.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -38,21 +40,33 @@ public class VCS_test_1 {
     final int sleepTime=2000;
 
 
-   /* @BeforeClass
-   public static void DriverInit()
-   {    Driver.set(Driver.BrowserName.FIREFOX);
-       driver = Driver.get();
-   }
-   */
+    @DataProvider(name="DDT1")
+    public Object[][] createData(){
+        return new Object[][]{
+                {rcptAddr1,topicG+ID,body1+1},
+                {rcptAddr1,ID+topicG,body1+2},
+                {rcptAddr1,ID,body1+3}
+        };
+    }
 
-    @Before
+    @DataProvider(name="DDT2")
+    public Object[][] createData2(){
+        return new Object[][]{
+                {rcptAddr2,topicH+ID,body2+1},
+                {rcptAddr2,ID+topicH,body2+2},
+                {rcptAddr2,ID,body2+3}
+        };
+    }
+
+    @BeforeClass
+
     public void DriverInit()
     {    Driver.set(Driver.BrowserName.GOOGLECHROME);
         driver = Driver.get();
     }
 
-    @Test
-    public void gmailSend()
+    @Test (dataProvider = "DDT1")
+    public void gmailSend(String rcptAddr1,String topic, String body1)
     {
         driver.navigate().to(gmailLoginUrl);
 
@@ -79,7 +93,7 @@ public class VCS_test_1 {
         HP.setRcpt(rcptAddr1);
 
     Thread.sleep(sleepTime);
-    HP.setSubject(topicG +ID);
+    HP.setSubject(topic);
 
         HP.setBody(body1);
 
@@ -92,13 +106,17 @@ public class VCS_test_1 {
         Thread.sleep(sleepTime);
 
 
-        HP.checkIfAmongSend(topicG + ID);
+        HP.checkIfAmongSend(topic);
+
+        Thread.sleep(sleepTime);
+        HP.logoutGmail();
+        Thread.sleep(sleepTime);
 
 //HOTMAIL DELIVERY CHECK
 
         driver.navigate().to(hotmailLoginUrl);
 
-        assertThat("login title is correct", driver.getTitle(), containsString("Sign In"));
+   //     assertThat("login title is correct", driver.getTitle(), containsString("Sign In"));
 
         userData user2=new userData();
         user2.createUser(hotmailEmail,hotmailPwd);
@@ -107,8 +125,13 @@ public class VCS_test_1 {
         homePageHotmail HP2=LP2.loginUserSuccess(user2);
 
 //CHECK IF EMAIL RECEIVED BY HOTMAIL
+        Thread.sleep(sleepTime);
 
-        HP2.checkIfAmongReceived(topicG + ID);
+        HP2.checkIfAmongReceived(topic);
+
+        Thread.sleep(sleepTime);
+
+        HP2.logoutHotmail();
         Thread.sleep(sleepTime);
 
 }catch(Exception e)
@@ -118,9 +141,9 @@ public class VCS_test_1 {
 
     }
 
-    @Test
+    @Test(dataProvider = "DDT2")
 
-    public void hotmailSend()
+    public void hotmailSend(String rcptAddr2,String topic, String body2)
 
    {
 
@@ -128,21 +151,29 @@ public class VCS_test_1 {
 
        driver.navigate().to(hotmailLoginUrl);
 
-       assertThat("login title is correct", driver.getTitle(), containsString("Sign In"));
+   //    assertThat("login title is correct", driver.getTitle(), containsString("Sign In"));
 
-       userData user2=new userData();
-       user2.createUser(hotmailEmail,hotmailPwd);
 
-       loginPageHotmail LP2 = new loginPageHotmail(driver);
-       homePageHotmail HP2=LP2.loginUserSuccess(user2);
-
-       JavascriptExecutor je=(JavascriptExecutor)driver;
+  //     JavascriptExecutor je=(JavascriptExecutor)driver;
 
        //SENDING MESSAGE TO GMAIL
 
 try{
+
+    userData user2=new userData();
+    user2.createUser(hotmailEmail,hotmailPwd);
+
     Thread.sleep(sleepTime);
-    assertThat("Correct email box check", je.executeScript("return document.title;").toString(), is("Outlook.com - n0t1m3t0st0p@hotmail.com"));
+
+    loginPageHotmail LP2 = new loginPageHotmail(driver);
+
+    Thread.sleep(sleepTime);
+
+    homePageHotmail HP2=LP2.loginUserSuccess(user2);
+
+
+    //Thread.sleep(sleepTime);
+//    assertThat("Correct email box check", je.executeScript("return document.title;").toString(), is("Outlook.com - n0t1m3t0st0p@hotmail.com"));
 
     //LOGIN INTO MAILBOX
     Thread.sleep(sleepTime);
@@ -152,7 +183,7 @@ try{
     HP2.setRcpt(rcptAddr2);
 
     Thread.sleep(sleepTime);
-    HP2.setSubject(topicH+ID);
+    HP2.setSubject(topic);
 
     Thread.sleep(sleepTime);
     HP2.setBody(body2);
@@ -166,9 +197,12 @@ try{
     HP2.gotoOutbox();
 
     Thread.sleep(sleepTime);
-    HP2.checkIfAmongSend(topicH + ID);
+    HP2.checkIfAmongSend(topic);
 
     Thread.sleep(sleepTime);
+    HP2.logoutHotmail();
+
+  //  Thread.sleep(sleepTime);
   // CHECK IF GMAIL BOX RECEIVED THE MAIL
 
     driver.navigate().to(gmailLoginUrl);
@@ -180,19 +214,26 @@ try{
     homePageGmail HP = new homePageGmail(driver);
 
     HP=LP.loginUserSuccess(user1);
+    Thread.sleep(sleepTime);
 
-    driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-    assertThat("login into n0t1m3t0st0p@gmail.com was succesfull", driver.findElement(By.xpath("//*[@title='n0t1m3t0st0p@gmail.com']")).getText(), containsString("n0t1m3t0st0p@gmail.com"));
+//    driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+ //   assertThat("login into n0t1m3t0st0p@gmail.com was succesfull", driver.findElement(By.xpath("//*[@title='n0t1m3t0st0p@gmail.com']")).getText(), containsString("n0t1m3t0st0p@gmail.com"));
 
 
-    driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-    HP.checkIfAmongReceived(topicH + ID);
+//    driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+    Thread.sleep(sleepTime);
+    HP.checkIfAmongReceived(topic);
+    Thread.sleep(sleepTime);
+    HP.logoutGmail();
+    Thread.sleep(sleepTime);
 }
+
 catch(Exception e)
 { System.out.println("Exception - > " + e.toString());
 }
    }
-  @After
+  @AfterClass
+
     public void CloseDriver()
     {driver.close();}
 

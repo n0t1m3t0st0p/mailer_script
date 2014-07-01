@@ -76,4 +76,14 @@ public class homePageGmail {
     public void checkIfAmongReceived(String subject)
     {           assertTrue("Hotmail Email is received by Gmail",(driver.findElement(By.xpath("//b[contains(text(),'" + subject+ "')]")).isDisplayed()));
     }
+
+
+    public void logoutGmail()//THIS METHOD IS ABSENT IN CODE FOR IE
+    {//document.getElementsByClassName("gb_y gb_4 gb_e gb_X")[0].click}
+        JavascriptExecutor je=(JavascriptExecutor)driver;
+       // je.executeScript("document.getElementsByClassName(\"gb_y gb_4 gb_e gb_X\")[0].click()");
+        //document.getElementsByClassName("gb_Nb gb_Vb gb_T")[0].click()
+        je.executeScript("document.getElementsByClassName(\"gb_Nb gb_Vb gb_T\")[0].click()");
+
+    }
 }

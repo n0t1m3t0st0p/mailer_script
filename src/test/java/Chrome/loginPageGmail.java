@@ -20,7 +20,7 @@ public class loginPageGmail {
 
         private void loginUser(userData user)
         {
-        new WebDriverWait(driver,10).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='Email']")));
+        new WebDriverWait(driver,15).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='Email']")));
 
         Action clickEmailField= new Actions(driver).click(driver.findElement(By.xpath("//*[@id='Email']"))).build();
         clickEmailField.perform();

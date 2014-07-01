@@ -71,4 +71,15 @@ public void checkIfAmongSend(String topic)
     }
 
 
-}
+public void logoutHotmail()//THIS METHOD IS ABSENT IN CODE FOR IE
+        {
+
+        //document.getElementById("c_meun").click()
+        JavascriptExecutor je=(JavascriptExecutor)driver;
+       // je.executeScript("document.getElementById(\"c_meun\").click()");
+        //document.getElementById("c_signout").click();
+        je.executeScript("document.getElementById(\"c_signout\").click();");
+
+        }
+
+        }
