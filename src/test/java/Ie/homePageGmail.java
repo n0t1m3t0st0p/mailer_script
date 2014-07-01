@@ -3,6 +3,7 @@ package Ie;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 
@@ -50,21 +51,27 @@ public class homePageGmail {
     public void setBody(String body)
 
     {   ////*[@class='Am Al editable LW-avf']
-        /*WebElement emailFrame=driver.findElement(By.xpath("//iframe[@tabindex='1']"));
+      /*  WebElement emailFrame=driver.findElement(By.xpath("//iframe[@tabindex='1']"));
+        driver.switchTo().frame(emailFrame);
+        Action clickOnEmailBody= new Actions(driver).click(driver.findElement(By.xpath("//*[@role='textbox']"))).build();
+        clickOnEmailBody.perform();
+*/
+
+      /*  WebElement emailFrame=driver.findElement(By.linkText("https://accounts.google.com/o/oauth2/postmessageRelay?parent=https%3A%2F%2Fmail.google.com#rpctoken=1169702640&amp;forcesecure=1"));
         driver.switchTo().frame(emailFrame);
         Action clickOnEmailBody= new Actions(driver).click(driver.findElement(By.xpath("//*[@role='textbox']"))).build();
         clickOnEmailBody.perform();
         */
-
         /*driver.findElement(By.xpath("//*[@class='Am Al editable LW-avf']")).click();
 
         Action enterBody = new Actions(driver).sendKeys(body).build();
         enterBody.perform();
 */
 
-//       JavascriptExecutor je=(JavascriptExecutor) driver;
+       JavascriptExecutor je=(JavascriptExecutor) driver;
 
-    // je.executeScript("document.getElementsByTagName('iframe')[9].contentDocument.children[0].children[1].innerHTML='"+body+"';");
+        je.executeScript("document.getElementsByClassName(\"Am Al editable LW-avf\")[0].innerHTML='"+body+"'");
+    //je.executeScript("document.getElementsByTagName('iframe')[9].contentDocument.children[0].children[1].innerHTML='"+body+"';");
 
        // je.executeScript("window.a=document.getElementsByTagName('iframe')[9].contentDocument;");
       // je.executeScript("window.a.children[0].children[1].innerHTML='1234567890';");

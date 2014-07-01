@@ -1,11 +1,15 @@
 package Ie;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+//import org.junit.After;
+//import org.junit.Before;
+//import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterClass;
 
 import java.util.concurrent.TimeUnit;
 
@@ -16,6 +20,8 @@ import static org.junit.Assert.assertThat;
 /**
  * Created by user on 23.05.14.
  */
+
+
 public class VCS_test_1 {
 
     static WebDriver driver;
@@ -38,15 +44,23 @@ public class VCS_test_1 {
     final int sleepTime=2000;
     final int sleepTime2=2000;
 
+    @DataProvider(name="DDT1")
+    public Object[][] createData(){
+        return new Object[][]{
+                {"test email from gmail1"},
+                {"test email from gmail2"},
+                {"test email from gmail3"},
+        };
+    }
 
-    @Before
+    @BeforeClass
     public void DriverInit()
     {    Driver.set(Driver.BrowserName.IE);
         driver = Driver.get();
     }
 
-    @Test
-    public void gmailSend()
+    @Test(dataProvider="DDT1")
+    public void gmailSend(String body1)
     {
         driver.navigate().to(gmailLoginUrl);
 
@@ -117,9 +131,9 @@ public class VCS_test_1 {
 
     }
 
-    @Test
+    @Test(dataProvider = "DDT1")
 
-    public void hotmailSend()
+    public void hotmailSend(String body2)
 
    {
 
@@ -192,7 +206,7 @@ catch(Exception e)
 { System.out.println("Exception - > " + e.toString());
 }
    }
-  @After
+  @AfterClass
     public void CloseDriver()
     {driver.close();}
 
