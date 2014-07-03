@@ -202,7 +202,9 @@ try{
     Thread.sleep(sleepTime);
     HP2.logoutHotmail();
 
-  //  Thread.sleep(sleepTime);
+    Thread.sleep(sleepTime);
+
+    //  Thread.sleep(sleepTime);
   // CHECK IF GMAIL BOX RECEIVED THE MAIL
 
     driver.navigate().to(gmailLoginUrl);

@@ -1,6 +1,7 @@
 package Mozilla;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
@@ -15,7 +16,7 @@ public class loginPageHotmail {
     {this.driver=driver;}
 
     public void loginUser(userData user)
-    {   Action clickEmailField2= new Actions(driver).click(driver.findElement(By.xpath("//*[@type='email']"))).build();
+    {  /* Action clickEmailField2= new Actions(driver).click(driver.findElement(By.xpath("//*[@type='email']"))).build();
         clickEmailField2.perform();
 
         Action enterEmail2 = new Actions(driver).sendKeys(userData.email).build();
@@ -32,6 +33,11 @@ public class loginPageHotmail {
 
         Action confirmEmailPwd2= new Actions(driver).click(driver.findElement(By.xpath("//*[@type='submit']"))).build();
         confirmEmailPwd2.perform();
+    */
+        JavascriptExecutor je=(JavascriptExecutor)driver;
+        je.executeScript("document.getElementsByName('login')[0].value='"+ userData.email+"';");
+        je.executeScript("document.getElementsByName('passwd')[0].value='"+ userData.password+"';");
+        driver.findElement(By.xpath("//*[@type='submit']")).click();
     }
 
     public homePageHotmail loginUserSuccess(userData user)

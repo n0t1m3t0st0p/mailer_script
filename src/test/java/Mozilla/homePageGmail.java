@@ -1,6 +1,7 @@
 package Mozilla;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
@@ -23,11 +24,15 @@ public class homePageGmail {
     }
 
     public void setRcpt(String rcptAddr1)
-    {Action clickRecipientField= new Actions(driver).click(driver.findElement(By.xpath("//textarea[@name='to']"))).build();
+    {/*Action clickRecipientField= new Actions(driver).click(driver.findElement(By.xpath("//textarea[@name='to']"))).build();
         clickRecipientField.perform();
 
         Action enterRcpt = new Actions(driver).sendKeys(rcptAddr1).build();
         enterRcpt.perform();
+    */
+        JavascriptExecutor je=(JavascriptExecutor) driver;
+
+        je.executeScript("document.getElementsByName('to')[0].value='"+rcptAddr1+"';");
     }
 
     public void setSubject(String subject)
@@ -66,5 +71,14 @@ public class homePageGmail {
 
     public void checkIfAmongReceived(String subject)
     {           assertTrue("Hotmail Email is received by Gmail",(driver.findElement(By.xpath("//b[contains(text(),'" + subject+ "')]")).isDisplayed()));
+    }
+
+    public void logoutGmail()//THIS METHOD IS ABSENT IN CODE FOR IE
+    {//document.getElementsByClassName("gb_y gb_4 gb_e gb_X")[0].click}
+        JavascriptExecutor je=(JavascriptExecutor)driver;
+        // je.executeScript("document.getElementsByClassName(\"gb_y gb_4 gb_e gb_X\")[0].click()");
+        //document.getElementsByClassName("gb_Nb gb_Vb gb_T")[0].click()
+        je.executeScript("document.getElementsByClassName(\"gb_Nb gb_Vb gb_T\")[0].click()");
+
     }
 }

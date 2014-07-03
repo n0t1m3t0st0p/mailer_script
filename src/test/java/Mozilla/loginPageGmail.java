@@ -1,6 +1,7 @@
 package Mozilla;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
@@ -20,7 +21,7 @@ public class loginPageGmail {
 
         private void loginUser(userData user)
         {
-        new WebDriverWait(driver,10).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='Email']")));
+  /*      new WebDriverWait(driver,5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='Email']")));
 
         Action clickEmailField= new Actions(driver).click(driver.findElement(By.xpath("//*[@id='Email']"))).build();
         clickEmailField.perform();
@@ -40,6 +41,15 @@ public class loginPageGmail {
 
         Action confirmEmailPwd= new Actions(driver).click(driver.findElement(By.xpath("//*[@id='signIn']"))).build();
         confirmEmailPwd.perform();
+    */
+            JavascriptExecutor je=(JavascriptExecutor) driver;
+
+            je.executeScript("document.getElementById('Email').value='"+ userData.email+"';");
+
+            je.executeScript("document.getElementById('Passwd').value='"+ userData.password+"';");
+
+            je.executeScript("document.getElementById('signIn').click()");
+
         }
 
         public homePageGmail loginUserSuccess(userData user)
