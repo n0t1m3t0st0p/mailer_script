@@ -174,7 +174,7 @@
       <file leaf-file-name="VCS_test_1.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Mozilla/VCS_test_1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="0" selection-start="2237" selection-end="2237" vertical-scroll-proportion="0.28028503" vertical-offset="919" max-vertical-offset="4097">
+            <state line="103" column="26" selection-start="3087" selection-end="3087" vertical-scroll-proportion="0.41042346" vertical-offset="1499" max-vertical-offset="4097">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -273,7 +273,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -361,6 +360,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -568,19 +568,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -606,6 +593,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -710,7 +710,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="748" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -722,7 +722,6 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970452" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" x="62" y="276" width="1304" height="215" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30015552" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -733,8 +732,9 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33333334" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30015552" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -753,13 +753,13 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30015552" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14128843" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29555896" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29555896" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -785,68 +785,42 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/Ie/VCS_test_1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="15" selection-start="2970" selection-end="2970" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3740">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="93" column="15" selection-start="2970" selection-end="2970" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3740" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Ie/homePageGmail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="24" selection-start="2311" selection-end="2403" vertical-scroll-proportion="0.0" vertical-offset="1139" max-vertical-offset="1530">
-          <folding />
-        </state>
+        <state line="67" column="24" selection-start="2311" selection-end="2403" vertical-scroll-proportion="0.0" vertical-offset="1139" max-vertical-offset="1530" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Ie/VCS_test_1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="15" selection-start="2970" selection-end="2970" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3740">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="93" column="15" selection-start="2970" selection-end="2970" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3740" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Ie/homePageGmail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="21" selection-start="2275" selection-end="2318" vertical-scroll-proportion="0.0" vertical-offset="1122" max-vertical-offset="1530">
-          <folding />
-        </state>
+        <state line="66" column="21" selection-start="2275" selection-end="2318" vertical-scroll-proportion="0.0" vertical-offset="1122" max-vertical-offset="1530" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Ie/VCS_test_1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="18" selection-start="2322" selection-end="2322" vertical-scroll-proportion="0.0" vertical-offset="881" max-vertical-offset="3723">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="62" column="18" selection-start="2322" selection-end="2322" vertical-scroll-proportion="0.0" vertical-offset="881" max-vertical-offset="3723" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Ie/homePageGmail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="0" selection-start="2195" selection-end="2195" vertical-scroll-proportion="0.0" vertical-offset="1088" max-vertical-offset="1530">
-          <folding />
-        </state>
+        <state line="64" column="0" selection-start="2195" selection-end="2195" vertical-scroll-proportion="0.0" vertical-offset="1088" max-vertical-offset="1530" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Ie/VCS_test_1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="46" selection-start="1248" selection-end="1248" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="3298">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="29" column="46" selection-start="1248" selection-end="1248" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="3298" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Ie/VCS_test_1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3298">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3298" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Opera/VCS_test_1.java">
@@ -987,16 +961,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Ie/loginPageGmail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="21" selection-start="301" selection-end="301" vertical-scroll-proportion="-0.1889401" vertical-offset="337" max-vertical-offset="1088">
-          <folding />
-        </state>
+        <state line="16" column="21" selection-start="301" selection-end="301" vertical-scroll-proportion="-0.1889401" vertical-offset="337" max-vertical-offset="1088" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Ie/homePageGmail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="21" selection-start="2419" selection-end="2419" vertical-scroll-proportion="0.9192399" vertical-offset="548" max-vertical-offset="1632">
-          <folding />
-        </state>
+        <state line="62" column="21" selection-start="2419" selection-end="2419" vertical-scroll-proportion="0.9192399" vertical-offset="548" max-vertical-offset="1632" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Mozilla/userData.java">
@@ -1008,30 +978,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Chrome/loginPageGmail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="60" selection-start="867" selection-end="867" vertical-scroll-proportion="0.0" vertical-offset="46" max-vertical-offset="952">
-          <folding />
-        </state>
+        <state line="27" column="60" selection-start="867" selection-end="867" vertical-scroll-proportion="0.0" vertical-offset="46" max-vertical-offset="952" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Opera/loginPageHotmail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="1885" selection-end="1957" vertical-scroll-proportion="0.8824885" vertical-offset="484" max-vertical-offset="1275">
-          <folding />
-        </state>
+        <state line="58" column="0" selection-start="1885" selection-end="1957" vertical-scroll-proportion="0.8824885" vertical-offset="484" max-vertical-offset="1275" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Opera/loginPageGmail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="7" selection-start="1489" selection-end="1811" vertical-scroll-proportion="0.37327188" vertical-offset="467" max-vertical-offset="1088">
-          <folding />
-        </state>
+        <state line="43" column="7" selection-start="1489" selection-end="1811" vertical-scroll-proportion="0.37327188" vertical-offset="467" max-vertical-offset="1088" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Opera/homePageHotmail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="16" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.0" vertical-offset="319" max-vertical-offset="1445">
-          <folding />
-        </state>
+        <state line="33" column="16" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.0" vertical-offset="319" max-vertical-offset="1445" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Opera/VCS_test_1.java">
@@ -1043,16 +1005,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Opera/homePageGmail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="4" selection-start="1028" selection-end="1176" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1513">
-          <folding />
-        </state>
+        <state line="37" column="4" selection-start="1028" selection-end="1176" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1513" />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/testng/lib/testng.jar!/org/testng/annotations/Test.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="21" selection-start="925" selection-end="925" vertical-scroll-proportion="0.35207823" vertical-offset="400" max-vertical-offset="1156">
-          <folding />
-        </state>
+        <state line="33" column="21" selection-start="925" selection-end="925" vertical-scroll-proportion="0.35207823" vertical-offset="400" max-vertical-offset="1156" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Mozilla/loginPageGmail.java">
@@ -1071,34 +1029,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Ie/VCS_test_1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="32" selection-start="3451" selection-end="3451" vertical-scroll-proportion="0.0" vertical-offset="1089" max-vertical-offset="3910">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="111" column="32" selection-start="3451" selection-end="3451" vertical-scroll-proportion="0.0" vertical-offset="1089" max-vertical-offset="3910" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Chrome/homePageGmail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="3" selection-start="2776" selection-end="3243" vertical-scroll-proportion="0.4124424" vertical-offset="1062" max-vertical-offset="1496">
-          <folding />
-        </state>
+        <state line="80" column="3" selection-start="2776" selection-end="3243" vertical-scroll-proportion="0.4124424" vertical-offset="1062" max-vertical-offset="1496" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Chrome/homePageHotmail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="0" selection-start="2560" selection-end="2965" vertical-scroll-proportion="0.0" vertical-offset="1016" max-vertical-offset="1462">
-          <folding />
-        </state>
+        <state line="73" column="0" selection-start="2560" selection-end="2965" vertical-scroll-proportion="0.0" vertical-offset="1016" max-vertical-offset="1462" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Chrome/VCS_test_1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="0" selection-start="3854" selection-end="3910" vertical-scroll-proportion="0.0" vertical-offset="2010" max-vertical-offset="4216">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="135" column="0" selection-start="3854" selection-end="3910" vertical-scroll-proportion="0.0" vertical-offset="2010" max-vertical-offset="4216" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Mozilla/homePageGmail.java">
@@ -1117,7 +1063,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Mozilla/VCS_test_1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="0" selection-start="2237" selection-end="2237" vertical-scroll-proportion="0.28028503" vertical-offset="919" max-vertical-offset="4097">
+        <state line="103" column="26" selection-start="3087" selection-end="3087" vertical-scroll-proportion="0.41042346" vertical-offset="1499" max-vertical-offset="4097">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
