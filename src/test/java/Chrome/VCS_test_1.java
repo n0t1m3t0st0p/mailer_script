@@ -38,8 +38,8 @@ public class VCS_test_1 {
     final String rcptAddr2="n0t1m3t0st0p@gmail.com";
     final String topicG ="test email from gmail";
     final String topicH ="test email from hotmail";
-    final String body1="Hello! here is my test email from Gmail service";
-    final String body2="Hello! here is my test email from Hotmail service";
+    final String body1="Hello! here is my test email from Gmail service send by Chrome";
+    final String body2="Hello! here is my test email from Hotmail service send by Chrome";
     final String ID=new java.util.Date().toString();
     final int sleepTime=2000;
 
@@ -71,8 +71,10 @@ public class VCS_test_1 {
     }
 
     @Test (dataProvider = "DDT1")
-    public void gmailSend(String rcptAddr1,String topic, String body1)
+    public void gmailSendCh(String rcptAddr1,String topic, String body1)
     {
+
+        driver.navigate().to(gmailLoginUrl);
         driver.manage().deleteAllCookies();
         driver.navigate().to(gmailLoginUrl);
 
@@ -88,7 +90,7 @@ public class VCS_test_1 {
         HP=LP.loginUserSuccess(user1);
 
 
-        try
+try
 {
 //MESSAGE SEND START
 
@@ -119,9 +121,16 @@ public class VCS_test_1 {
         Thread.sleep(sleepTime);
 
 //HOTMAIL DELIVERY CHECK
+}catch(Exception e)
+        { System.out.println("Exception - > " + e.toString());
+        }
 
-        driver.navigate().to(hotmailLoginUrl);
+driver.navigate().to(hotmailLoginUrl);
+driver.manage().deleteAllCookies();
+driver.navigate().to(hotmailLoginUrl);
 
+        try
+ {
    //     assertThat("login title is correct", driver.getTitle(), containsString("Sign In"));
 
         userData user2=new userData();
@@ -149,7 +158,7 @@ public class VCS_test_1 {
 
     @Test(dataProvider = "DDT2")
 
-    public void hotmailSend(String rcptAddr2,String topic, String body2)
+    public void hotmailSendCh(String rcptAddr2,String topic, String body2)
 
    {
 
