@@ -4,10 +4,14 @@ package Chrome;
 import org.junit.Before;
 import org.junit.Test;
 */
+import org.junit.*;
 import org.testng.annotations.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
@@ -58,7 +62,8 @@ public class VCS_test_1 {
         };
     }
 
-    @BeforeClass
+   @BeforeClass
+
 
     public void DriverInit()
     {    Driver.set(Driver.BrowserName.GOOGLECHROME);
@@ -68,6 +73,7 @@ public class VCS_test_1 {
     @Test (dataProvider = "DDT1")
     public void gmailSend(String rcptAddr1,String topic, String body1)
     {
+        driver.manage().deleteAllCookies();
         driver.navigate().to(gmailLoginUrl);
 
         userData user1=new userData();
@@ -86,7 +92,7 @@ public class VCS_test_1 {
 {
 //MESSAGE SEND START
 
-        Thread.sleep(sleepTime*4);
+        Thread.sleep(sleepTime*2);
         HP.createEmail();
 
         Thread.sleep(sleepTime);
@@ -148,7 +154,7 @@ public class VCS_test_1 {
    {
 
     //ENTERING HOTMAIL BOX
-
+       driver.manage().deleteAllCookies();
        driver.navigate().to(hotmailLoginUrl);
 
    //    assertThat("login title is correct", driver.getTitle(), containsString("Sign In"));

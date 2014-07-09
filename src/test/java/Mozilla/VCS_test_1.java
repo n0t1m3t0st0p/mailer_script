@@ -73,6 +73,7 @@ public class VCS_test_1 {
     @Test(dataProvider="DDT1")
     public void gmailSend0(String rcptAddr1,String topic, String body1)
     {
+        driver.manage().deleteAllCookies();
         driver.navigate().to(gmailLoginUrl);
 
         userData user1=new userData();
@@ -152,7 +153,7 @@ public class VCS_test_1 {
    {
 
     //ENTERING HOTMAIL BOX
-
+       driver.manage().deleteAllCookies();
        driver.navigate().to(hotmailLoginUrl);
 
    //    assertThat("login title is correct", driver.getTitle(), containsString("Sign In"));

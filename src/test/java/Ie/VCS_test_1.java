@@ -47,9 +47,9 @@ public class VCS_test_1 {
     @DataProvider(name="DDT1")
     public Object[][] createData(){
         return new Object[][]{
-                {rcptAddr1,topicG+ID,body1+1}/*,
-                {rcptAddr2,ID+topicG,body1+2},
-                {rcptAddr1,ID,body1+3},*/
+                {rcptAddr1,topicG+ID,body1+1},
+                {rcptAddr1,ID+topicG,body1+2},
+                {rcptAddr1,ID,body1+3}
         };
     }
 
@@ -57,8 +57,8 @@ public class VCS_test_1 {
     public Object[][] createData2(){
         return new Object[][]{
                 {rcptAddr2,topicH+ID,body2+1},
-                /*{rcptAddr1,ID+topicH,body2+2},
-                {rcptAddr2,ID,body2+3},*/
+                {rcptAddr2,ID+topicH,body2+2},
+                {rcptAddr2,ID,body2+3}
         };
     }
 
@@ -72,6 +72,7 @@ public class VCS_test_1 {
     @Test(dataProvider="DDT1")
     public void gmailSend(String rcptAddr1,String topic, String body1)
     {
+        driver.manage().deleteAllCookies();
         driver.navigate().to(gmailLoginUrl);
 
 //        assertThat("login title is correct", driver.getTitle(), containsString("Gmail"));
@@ -149,7 +150,7 @@ public class VCS_test_1 {
    {
 
     //ENTERING HOTMAIL BOX
-
+       driver.manage().deleteAllCookies();
        driver.navigate().to(hotmailLoginUrl);
 
 //       assertThat("login title is correct", driver.getTitle(), containsString("Sign In"));
